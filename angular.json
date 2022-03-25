@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ample-admin-angular": {
+    "BB-Border-Box-WebCrm": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ample-admin-angular",
+            "outputPath": "dist/bb-border-box-web-crm",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -31,7 +31,6 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/scss/style.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -41,8 +40,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "5mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -73,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ample-admin-angular:build:production"
+              "browserTarget": "BB-Border-Box-WebCrm:build:production"
             },
             "development": {
-              "browserTarget": "ample-admin-angular:build:development"
+              "browserTarget": "BB-Border-Box-WebCrm:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ample-admin-angular:build"
+            "browserTarget": "BB-Border-Box-WebCrm:build"
           }
         },
         "test": {
@@ -108,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "ample-admin-angular"
+  "defaultProject": "BB-Border-Box-WebCrm"
 }
